@@ -1,0 +1,10 @@
+<div class="dice-wrapper" [ngStyle]="{'visibility': diceVisibilty}">
+  <app-dice
+    *ngFor="let d of dices"
+    [dice]="d"
+    (statusChanged)="diceStatus($event)"
+  ></app-dice>
+</div>
+<div class="cta">
+  <a class="action" (click)="diceAll()">Dice ({{diceTurn}})</a>
+</div>

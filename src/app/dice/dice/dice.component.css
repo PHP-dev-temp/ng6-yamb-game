@@ -1,0 +1,16 @@
+.dice{
+  display:inline-block;
+  margin:9px;
+  width:40px;
+  height:40px;
+  font-size:1.75em;
+  line-height:40px;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius:4px;
+  cursor: pointer;
+  background: lightyellow;
+}
+.keeped{
+  background: lightblue;
+}

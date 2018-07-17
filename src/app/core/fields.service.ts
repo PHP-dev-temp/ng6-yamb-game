@@ -10,6 +10,7 @@ export class FieldsService {
   fields: Field[] = [];
   sumFields: Field[] = [];
   fieldRow = ['1', '2', '3', '4', '5', '6', 'max', 'min', 'S', 'F', 'C', 'Y'];
+  enableField = true;
 
   constructor() { }
 
