@@ -1,0 +1,11 @@
+.field{
+  background: white;
+  text-align: center;
+  height:2em;
+  width:58px;
+  line-height: 2em;
+  border: 1px solid gray;
+  -moz-box-shadow:    inset 0 0 4px grey;
+  -webkit-box-shadow: inset 0 0 4px grey;
+  box-shadow:         inset 0 0 4px grey;
+}

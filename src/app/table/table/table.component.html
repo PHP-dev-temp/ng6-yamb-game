@@ -1,0 +1,123 @@
+<div class="row">
+  <div class="row-info">
+    <div
+      class="field-info-top"
+      *ngFor="let f of infoTop"
+      [innerHtml]="f"></div>
+  </div>
+  <div class="col">
+    <div
+      class="field-info-left"
+      *ngFor="let f of infoLeft"
+      [innerHtml]="f"></div>
+  </div>
+  <div class="col">
+    <app-field
+      *ngFor="let f of fields | filter:'down':'top'"
+      [field]="f"
+    ></app-field>
+    <app-field
+      *ngFor="let f of sumFields | filter:'down':'top'"
+      [field]="f"
+    ></app-field>
+    <app-field
+      *ngFor="let f of fields | filter:'down':'middle'"
+      [field]="f"
+    ></app-field>
+    <app-field
+      *ngFor="let f of sumFields | filter:'down':'middle'"
+      [field]="f"
+    ></app-field>
+    <app-field
+      *ngFor="let f of fields | filter:'down':'bottom'"
+      [field]="f"
+    ></app-field>
+    <app-field
+      *ngFor="let f of sumFields | filter:'down':'bottom'"
+      [field]="f"
+    ></app-field>
+  </div>
+  <div class="col">
+    <app-field
+      *ngFor="let f of fields | filter:'free':'top'"
+      [field]="f"
+    ></app-field>
+    <app-field
+      *ngFor="let f of sumFields | filter:'free':'top'"
+      [field]="f"
+    ></app-field>
+    <app-field
+      *ngFor="let f of fields | filter:'free':'middle'"
+      [field]="f"
+    ></app-field>
+    <app-field
+      *ngFor="let f of sumFields | filter:'free':'middle'"
+      [field]="f"
+    ></app-field>
+    <app-field
+      *ngFor="let f of fields | filter:'free':'bottom'"
+      [field]="f"
+    ></app-field>
+    <app-field
+      *ngFor="let f of sumFields | filter:'free':'bottom'"
+      [field]="f"
+    ></app-field>
+  </div>
+  <div class="col">
+    <app-field
+      *ngFor="let f of fields | filter:'up':'top'"
+      [field]="f"
+    ></app-field>
+    <app-field
+      *ngFor="let f of sumFields | filter:'up':'top'"
+      [field]="f"
+    ></app-field>
+    <app-field
+      *ngFor="let f of fields | filter:'up':'middle'"
+      [field]="f"
+    ></app-field>
+    <app-field
+      *ngFor="let f of sumFields | filter:'up':'middle'"
+      [field]="f"
+    ></app-field>
+    <app-field
+      *ngFor="let f of fields | filter:'up':'bottom'"
+      [field]="f"
+    ></app-field>
+    <app-field
+      *ngFor="let f of sumFields | filter:'up':'bottom'"
+      [field]="f"
+    ></app-field>
+  </div>
+  <div class="col">
+    <app-field
+      *ngFor="let f of fields | filter:'announce':'top'"
+      [field]="f"
+    ></app-field>
+    <app-field
+      *ngFor="let f of sumFields | filter:'announce':'top'"
+      [field]="f"
+    ></app-field>
+    <app-field
+      *ngFor="let f of fields | filter:'announce':'middle'"
+      [field]="f"
+    ></app-field>
+    <app-field
+      *ngFor="let f of sumFields | filter:'announce':'middle'"
+      [field]="f"
+    ></app-field>
+    <app-field
+      *ngFor="let f of fields | filter:'announce':'bottom'"
+      [field]="f"
+    ></app-field>
+    <app-field
+      *ngFor="let f of sumFields | filter:'announce':'bottom'"
+      [field]="f"
+    ></app-field>
+  </div>
+</div>
+
+<div class="row">
+  <div class="dice-wrapper">
+  </div>
+</div>
