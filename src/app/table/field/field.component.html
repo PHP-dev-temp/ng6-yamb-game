@@ -1,3 +1,5 @@
-<div class="field" [ngStyle]="{'background-color': bgColor}">
+<div class="field"
+     [ngStyle]="{'background-color': bgColor}"
+     [ngClass]="{'reserved': reserved}">
   {{field.fieldEmpty?'':field.fieldValue}}
 </div>

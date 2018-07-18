@@ -103,6 +103,7 @@
       *ngFor="let f of fields | filter:'announce':'top'"
       [field]="f"
       (click)="onFieldClick(f)"
+      [reserved]="f.fieldReserved"
     ></app-field>
     <app-field
       *ngFor="let f of sumFields | filter:'announce':'top'"
@@ -112,6 +113,7 @@
       *ngFor="let f of fields | filter:'announce':'middle'"
       [field]="f"
       (click)="onFieldClick(f)"
+      [reserved]="f.fieldReserved"
     ></app-field>
     <app-field
       *ngFor="let f of sumFields | filter:'announce':'middle'"
@@ -121,6 +123,7 @@
       *ngFor="let f of fields | filter:'announce':'bottom'"
       [field]="f"
       (click)="onFieldClick(f)"
+      [reserved]="f.fieldReserved"
     ></app-field>
     <app-field
       *ngFor="let f of sumFields | filter:'announce':'bottom'"
@@ -128,6 +131,7 @@
     ></app-field>
   </div>
 </div>
+<div class="total">{{total}}</div>
 
 
 <app-dice-table></app-dice-table>

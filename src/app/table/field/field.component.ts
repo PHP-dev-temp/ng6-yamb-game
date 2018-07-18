@@ -8,6 +8,7 @@ import {Field} from './fieald.model';
 })
 export class FieldComponent implements OnInit {
   @Input() field: Field;
+  @Input() reserved: boolean;
   bgColor: string = 'white';
 
   constructor() { }

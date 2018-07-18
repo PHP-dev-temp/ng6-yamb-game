@@ -5,6 +5,7 @@ export class Field{
   fieldValue: number;
   fieldEmpty: boolean;
   fieldEnable: boolean;
+  fieldReserved: boolean;
 
   constructor (
     fieldId: number,
@@ -20,5 +21,6 @@ export class Field{
     this.fieldValue = fieldValue;
     this.fieldEmpty = fieldEmpty;
     this.fieldEnable = fieldEnable;
+    this.fieldReserved = false;
   }
 }

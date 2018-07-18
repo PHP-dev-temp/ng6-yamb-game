@@ -18,3 +18,12 @@
   clear: both;
   display: table;
 }
+.total{
+  width:100%;
+  border:2px solif gray;
+  font-size:2em;
+  text-align:center;
+  background:darkslategray;
+  color:white;
+  font-style: italic;
+}
