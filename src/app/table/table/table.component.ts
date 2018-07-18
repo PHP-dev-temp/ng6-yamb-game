@@ -95,10 +95,10 @@ export class TableComponent implements OnInit {
 
   calculateSum () {
     console.log(this.fields);
-    console.log(this.sumFields);
-    for (const column = 0; column < 4; column++) {
-      let sum = 0;
-      for (const i = 0; i < 6; i++) {
+    let sum: number;
+    for (let column = 0; column < 4; column++) {
+      sum = 0;
+      for (let i = 0; i < 6; i++) {
         sum += this.fields[i + column * 12].fieldValue;
       }
       if (sum > 59) {
@@ -110,8 +110,8 @@ export class TableComponent implements OnInit {
         this.fields[column * 12].fieldValue *
         (this.fields[6 + column * 12].fieldValue - this.fields[7 + column * 12].fieldValue);
 
-      let sum = 0;
-      for (const i = 0; i < 4; i++) {
+      sum = 0;
+      for (let i = 0; i < 4; i++) {
         sum += this.fields[8 + i + column * 12].fieldValue;
       }
       this.sumFields[2 + column * 3].fieldValue = sum;
